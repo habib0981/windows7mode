@@ -9,15 +9,7 @@
             font-family: 'Segoe UI', sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 20px;
-            font-size: 2em;
-            text-align: center;
+            padding-top: 60px; /* Make space for fixed header */
         }
         .top-bar {
             background-color: #333;
@@ -25,6 +17,19 @@
             padding: 10px 0;
             font-size: 1.2em;
             letter-spacing: 1px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+            text-align: center;
         }
         .content {
             background-color: white;
@@ -57,7 +62,7 @@
             margin-top: 20px;
         }
         .image-container img {
-            width: 80%;
+            width: 60%; /* Make image smaller */
             border-radius: 10px;
         }
     </style>
@@ -85,3 +90,4 @@
     </div>
 </body>
 </html>
+
