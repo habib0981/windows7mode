@@ -1,1 +1,1 @@
-# windows7mode
+# yes
