@@ -1,0 +1,61 @@
+/* General Page Styling */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Top Bar (Fake Microsoft Header) */
+.top-bar {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Page Container */
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Windows 7 Laptop Image */
+.win7-img {
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    background-color: #0067b8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #004a7f;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    color: gray;
+    font-size: 14px;
+}
