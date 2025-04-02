@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Micosoft Windows 7 Mode for Windows 11</title>
   <style>
-    /* Background color, text styles, and junk customization */
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #f4f4f4;
       font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
       color: #333;
-      padding: 0;
-      margin: 0;
       font-size: 14px;
     }
+
     header {
       background-color: #0061f2;
       color: white;
@@ -21,41 +26,56 @@
       font-size: 24px;
       text-align: left;
     }
+
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
+    /* Main content box */
     .main-content {
       padding: 20px 40px;
       background-color: #fff;
       margin-top: 20px;
-      border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
     .download-btn {
       background-color: #0061f2;
       color: white;
       padding: 15px;
       text-align: center;
       width: 250px;
-      border-radius: 5px;
       cursor: pointer;
       font-weight: bold;
       margin-top: 20px;
+      display: inline-block;
     }
+
+    .download-btn:hover {
+      background-color: #004a99;
+    }
+
+    /* Features section layout */
     .feature-section {
       margin-top: 40px;
       display: flex;
       justify-content: space-between;
     }
+
     .feature-item {
       width: 30%;
       background-color: #f1f1f1;
       padding: 20px;
-      border-radius: 10px;
       text-align: center;
     }
+
+    /* Testimonial section */
     .testimonial {
       text-align: center;
       font-size: 16px;
@@ -63,6 +83,8 @@
       font-style: italic;
       color: #555;
     }
+
+    /* Footer section */
     .footer {
       background-color: #1e1e1e;
       color: #fff;
@@ -70,6 +92,19 @@
       text-align: center;
       font-size: 12px;
     }
+
+    /* Image styling */
+    .windows7-image {
+      display: block;
+      width: 400px; /* smaller size */
+      margin: 20px auto;
+    }
+
+    /* Remove rounded corners */
+    .main-content, .download-btn, .feature-item {
+      border-radius: 0;
+    }
+
     .hidden-info {
       display: none;
       color: red;
@@ -77,6 +112,8 @@
   </style>
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
     <div class="header-content">
       <span>Micosoft</span>
@@ -84,12 +121,18 @@
     </div>
   </header>
   
+  <!-- Main Content -->
   <div class="main-content">
-    <h1>Windows 7 Mode for Windows 11</h1>
+    <h1>Micosoft Windows 7 Mode for Windows 11</h1>
     <p>Experience the Aero Glass, the Start Menu, and everything you miss from the good old days!</p>
     
+    <!-- Windows 7 Laptop Image -->
+    <img class="windows7-image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/sds-windows7-laptop-fy24?scl=1&fmt=png-alpha" alt="Windows 7 Laptop">
+    
+    <!-- Download Button -->
     <div class="download-btn" onclick="alert('April Fools!')">Download Windows 7 Mode</div>
     
+    <!-- Features Section -->
     <section class="feature-section">
       <div class="feature-item">
         <h2>Security Enhancements</h2>
@@ -105,11 +148,13 @@
       </div>
     </section>
     
+    <!-- Fake Testimonial -->
     <div class="testimonial">
       "Windows 7 Mode helped me unlock a new level of productivity!" - Happy User, Somewhere in the World
     </div>
   </div>
   
+  <!-- Footer Section -->
   <footer class="footer">
     <p>© 2025 Micosoft Corporation. All Rights Reserved.</p>
     <p><a href="#" style="color: #fff;">Privacy & Terms</a></p>
@@ -121,6 +166,7 @@
       window.open('mspaint.exe');
     }
   </script>
+
 </body>
 </html>
 
